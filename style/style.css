@@ -1,0 +1,176 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* add font */
+
+@font-face {
+    font-family: brand_font;
+    src: url(../font/Galindo/Galindo-Regular.ttf);
+}
+
+/* background */
+
+.black__background {
+
+    display: flex;
+    column-gap: 10px;
+    background-color: #1F4529;
+    padding: 40px;
+    font-size: 30px;
+    font-family: brand_font;
+    color: white;
+    justify-content: center;
+
+}
+
+/* menue */
+.all_menu {
+    background-color: black;
+}
+
+.svgs__menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.user__store__icon__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background-color: #47663B;
+
+}
+
+.body {
+    background-color: #EED3B1;
+}
+
+.gender_choos {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+.kids{
+    position: relative;
+}
+.men{
+    position: relative;
+}
+.women{
+    position: relative;
+}
+
+
+
+.overlay-kids {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #47663B;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.8s ease;
+}
+
+.overlay-men {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #304850;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: 0.8s ease;
+}
+
+.ovelay-women {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+
+
+.kids:hover .overlay-kids {
+    height: 100%;
+}
+
+.men:hover .overlay-men {
+    height: 100%;
+}
+
+.women:hover .overlay-women {
+    height: 100%;
+    left: 0;
+}
+
+
+.text-kids{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.text-men{
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.text-women{
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width:850px) {
+    .gender_choos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .gender_choos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
