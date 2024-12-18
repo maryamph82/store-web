@@ -1,0 +1,104 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* add font */
+
+@font-face {
+    font-family: brand_font;
+    src: url(../font/Galindo/Galindo-Regular.ttf);
+}
+
+/* background */
+
+.black__background {
+
+    display: flex;
+    column-gap: 10px;
+    background-color: #1F4529;
+    padding: 40px;
+    font-size: 30px;
+    font-family: brand_font;
+    color: white;
+    justify-content: center;
+
+}
+
+/* menue */
+.all_menu {
+    background-color: black;
+}
+
+.svgs__menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.user__store__icon__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background-color: #47663B;
+
+}
+
+.all-of-body {
+    background-color: #EED3B1;
+}
+
+.gender_choos {
+    box-shadow: 10px 10px 5px lightblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+    border: 5px solid #1F4529;
+}
+
+input {
+    padding: 10px;
+}
+
+
+
+@media screen and (max-width:850px) {
+    .gender_choos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .gender_choos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.shared-style {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 211, 211);
+    border-radius: 50px;
+}
+
+.newest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.popular-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}

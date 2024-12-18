@@ -32,7 +32,7 @@ class Product(models.Model):
     name = models.CharField(max_length=30)
     color = models.CharField(max_length=30)
     number = models.IntegerField(default=0)
-    category = models.ForeignKey(Category , on_delete=models.CASCADE)
+    category = models.ForeignKey(Category , on_delete=models.CASCADE , default=1)
     user = models.ForeignKey(User , on_delete=models.CASCADE)
     type = models.CharField(max_length=30)
     brand = models.CharField(max_length=30)
@@ -44,10 +44,15 @@ class Product(models.Model):
         return f'{self.p_id} {self.p_name}'
 
 class Coat(models.Model):
+    SIZES = [
+        ('m',38),
+        ('l',40),
+        ('xl',42)
+    ]
     c_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
+    size = models.CharField(max_length=3,choices=SIZES,default='m')
 
     def __str__(self):
         return f'{self.c_id} {self.size}'
@@ -66,7 +71,6 @@ class Bag(models.Model):
     b_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
 
     def __str__(self):
         return f'{self.b_id}'
@@ -97,19 +101,31 @@ class Scarf(models.Model):
         return f'{self.s_id} {self.season} {self.design}'
 
 class Shoes(models.Model):
+    SIZES = [
+        ('قالب خیلی کوچک',38),
+        ('قالب کوچک',39),
+        ('قالب متوسط',40),
+        ('قالب بزرگ',41),
+        ('قالب خیلی بزرگ',42)
+    ]
     sh_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
+    size = models.CharField(max_length=15,choices=SIZES,default=1)
 
     def __str__(self):
         return f'{self.sh_id} {self.size} {self.description}'
 
 class Shirt(models.Model):
+    SIZES = [
+        ('m',38),
+        ('l',40),
+        ('xl',42)
+    ]
     sh_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
+    size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
         return f'{self.sh_id} {self.size}'
@@ -119,11 +135,16 @@ class Hoodie(models.Model):
         ('0','بدون کلاه'),
         ('1','با کلاه')
     ]
+    SIZES = [
+        ('m',38),
+        ('l',40),
+        ('xl',42)
+    ]
     h_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     hat = models.CharField(max_length=1,choices=HAT_CHOICE,default='0')
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
+    size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
         return f'{self.sh_id} {self.size} {self.description}'
@@ -137,19 +158,29 @@ class Belt(models.Model):
         return f'{self.b_id} {self.description}'
 
 class Pants(models.Model):
+    SIZES = [
+        ('m',38),
+        ('l',40),
+        ('xl',42)
+    ]
     p_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
+    size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
         return f'{self.p_id} {self.size} {self.description}'
 
 class Skirt(models.Model):
+    SIZES = [
+        ('m',42),
+        ('l',44),
+        ('xl',46)
+    ]
     s_id = models.CharField(max_length=10)
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    size = models.CharField(max_length=5)
+    size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
         return f'{self.p_id} {self.size} {self.description}'

@@ -1,0 +1,33 @@
+body {
+    background-color: #EED3B1;
+}
+
+.white__bgColor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 400px;
+    padding: 60px 10px;
+    margin: 100px auto;
+}
+
+input {
+    max-width: 500px;
+    min-width: 250px;
+    border: none;
+    outline: none;
+    background: #E8ECD7;
+    padding: 15px;
+    margin: 15px;
+}
+
+
+button {
+    padding: 15px;
+    max-width: 500px;
+    min-width: 278px;
+    border: none;
+    background-color:green
+}
