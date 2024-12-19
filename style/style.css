@@ -27,25 +27,13 @@
 
 }
 
-/* menue */
-.all_menu {
-    background-color: black;
-}
-
 .svgs__menu {
     display: flex;
     align-items: center;
 }
 
 
-.user__store__icon__input {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px 12px;
-    background-color: #47663B;
 
-}
 
 .all-of-body {
     background-color: #EED3B1;
@@ -89,6 +77,21 @@ input {
     border-radius: 50px;
 }
 
+.discription{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aqua;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.brand-icon{
+justify-content: center;
+align-items: center;
+display: flex;
+}
+
 .newest {
     display: flex;
     align-items: center;
@@ -96,13 +99,20 @@ input {
     gap: 30px;
 }
 
-.popular-brands {
+
+.menu-box {
+
+    min-width: 600px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
+    padding: 1px 1px;
+    background-color: #47663B;
 }
-.choos-gender-title{
+
+
+
+.choos-gender-title {
     gap: 385px;
     display: flex;
     align-items: center;
