@@ -1,32 +1,20 @@
-body {
-    background-color: #EED3B1;
-}
-
 @font-face {
     font-family: title-font;
     src: url(../font/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
 }
 
-.white__bgColor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    max-width: 400px;
-    padding: 60px 10px;
-    margin: 100px auto;
-}
-
 input {
-    max-width: 500px;
-    min-width: 250px;
+    width: 331px;
     border: none;
     outline: none;
     background: #E8ECD7;
-    padding: 20px;
-    margin: 8px;
+    padding: 30px;
+    margin: 15px;
     border-radius: 60px;
+}
+
+body {
+    background-color: #EED3B1;
 }
 
 .inputs {
@@ -34,6 +22,16 @@ input {
     flex-direction: column;
 }
 
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    max-width: 400px;
+    padding: 200px 100px;
+    margin: 100px auto;
+}
 
 button {
     color: white;
@@ -45,8 +43,10 @@ button {
     margin-top: 30px;
 }
 
+
 .title {
     font-family: title-font;
     font-size: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 200px;
+
 }
