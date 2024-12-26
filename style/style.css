@@ -14,13 +14,13 @@
 
 /* background */
 
-.black__background {
+.brand__name {
 
     display: flex;
     column-gap: 10px;
     background-color: #1F4529;
-    padding: 40px;
-    font-size: 30px;
+    padding: 10px;
+    font-size: 15px;
     font-family: brand_font;
     color: white;
     justify-content: center;
@@ -36,7 +36,7 @@
 
 
 .all-of-body {
-    background-color: #EED3B1;
+    background-color: #f3f3f3;
 }
 
 .gender_choos {
@@ -45,7 +45,7 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 10px;
-    border: 5px solid #1F4529;
+
 }
 
 input {
@@ -77,20 +77,6 @@ input {
     border-radius: 50px;
 }
 
-.discription{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: aqua;
-    padding: 100px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.brand-icon{
-justify-content: center;
-align-items: center;
-display: flex;
-}
 
 .newest {
     display: flex;
@@ -99,6 +85,26 @@ display: flex;
     gap: 30px;
 }
 
+.popular-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+
+}
 
 .menu-box {
 
