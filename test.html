@@ -4,112 +4,41 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
 
         .navbar {
-            overflow: hidden;
-            background: linear-gradient(45deg, #ff6f61, #ff9068);
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .navbar a {
-            float: left;
-            display: block;
-            color: #fff;
+            color: #f2f2f2;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
             font-size: 18px;
-            transition: background 0.3s, color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .navbar a:hover {
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffdd57;
-        }
-
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-
-        .dropdown .dropbtn {
-            font-size: 18px; 
-            border: none;
-            outline: none;
-            color: white;
-            padding: 14px 20px;
-            background: inherit;
-            font-family: inherit;
-            margin: 0;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .navbar a:hover, .dropdown:hover .dropbtn {
-            background: rgba(255, 255, 255, 0.1);
-            color: #ffdd57;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffdd57;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            float: none;
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #ff6f61;
-            color: white;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .brand {
-            float: left;
-            font-size: 22px;
-            padding: 14px 20px;
-            color: white;
-            text-transform: uppercase;
-            font-weight: bold;
+            background-color: #ddd;
+            color: #333;
         }
     </style>
 </head>
 <body>
-
-<div class="navbar">
-  <div class="brand">فروشگاه من</div>
-  <a href="#home">خانه</a>
-  <a href="#shop">فروشگاه</a>
-  <div class="dropdown">
-    <button class="dropbtn">دسته‌بندی‌ها 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#electronics">الکترونیک</a>
-      <a href="#clothing">لباس</a>
-      <a href="#accessories">لوازم جانبی</a>
+    <div class="navbar">
+        <a href="#home">خانه</a>
+        <a href="#shop">فروشگاه</a>
+        <a href="#categories">دسته‌بندی‌ها</a>
+        <a href="#contact">تماس با ما</a>
+        <a href="#about">درباره ما</a>
     </div>
-  </div> 
-  <a href="#contact">تماس با ما</a>
-  <a href="#about">درباره ما</a>
-</div>
-
 </body>
 </html>
