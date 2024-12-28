@@ -1,3 +1,67 @@
+@font-face {
+    font-family: brand_font;
+    src: url(../font/Galindo/Galindo-Regular.ttf);
+}
+/* brand*/
+
+.brand__name {
+
+    display: flex;
+    column-gap: 10px;
+    background-color: #84e484;
+    padding: 10px;
+    font-size: 15px;
+    font-family: brand_font;
+    color: white;
+    justify-content: center;
+
+}
+
+/* start menu style */
+
+@font-face {
+    font-family: menu;
+    src: url(/font/Galindo/Galindo-Regular.ttf);
+}
+
+.menue {
+    background-color: #607c3b;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+.menu-option {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.option {
+
+    margin: 0 15px;
+}
+
+.option a {
+    font-family: menu;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.option a:hover {
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+
+/* end menu style */
+
 .brand-icon {
     justify-content: center;
     align-items: center;
@@ -32,5 +96,5 @@
 .contact-icons a {
     display: inline-block;
     margin-left: 7px;
-    margin-right:7px ;
+    margin-right: 7px;
 }

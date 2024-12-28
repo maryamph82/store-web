@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+.all-of-body {
+    background-color: #f3f3f3;
+}
+
+
 /* add font */
 
 @font-face {
@@ -12,13 +17,13 @@
     src: url(../font/Galindo/Galindo-Regular.ttf);
 }
 
-/* background */
+/* brand*/
 
 .brand__name {
 
     display: flex;
     column-gap: 10px;
-    background-color: #1F4529;
+    background-color: #84e484;
     padding: 10px;
     font-size: 15px;
     font-family: brand_font;
@@ -27,25 +32,65 @@
 
 }
 
-.svgs__menu {
+/* start menu style */
+
+@font-face {
+    font-family: menu;
+    src: url(/font/Galindo/Galindo-Regular.ttf);
+}
+
+.menue {
+    border-radius: 50px;
+    background-color: #607c3b;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-option {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+.option {
+
+    margin: 0 15px;
+}
+
+.option a {
+    font-family: menu;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.option a:hover {
+    color: #333;
+    background-color: #f2f2f2;
 }
 
 
+/* end menu style */
 
+/* gender choose */
 
-.all-of-body {
-    background-color: #f3f3f3;
-}
 
 .gender_choos {
-    box-shadow: 10px 10px 5px lightblue;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 10px;
 
+}
+
+.gender_choos img {
+    border-radius: 50px;
 }
 
 input {
@@ -68,24 +113,27 @@ input {
 
 
 .shared-style {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     font-size: 30px;
     justify-content: center;
     align-items: center;
     background-color: rgb(182, 211, 211);
-    border-radius: 50px;
+
 }
 
 
 .newest {
+    margin-top: 20px;
+    margin-block-end: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
 }
 
 .popular-brands {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,19 +151,12 @@ input {
     width: 200px;
     height: 200px;
     border: 1px solid #ccc;
-
+    border-radius: 20px;
 }
 
-.menu-box {
-
-    min-width: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1px 1px;
-    background-color: #47663B;
+.image-box img {
+    border-radius: 20px;
 }
-
 
 
 .choos-gender-title {
