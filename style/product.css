@@ -1,3 +1,9 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 @font-face {
@@ -32,7 +38,7 @@
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menue {
+.menu {
     border-radius: 50px;
     background-color: #607c3b;
     padding: 10px 0;
@@ -74,7 +80,10 @@
 
 
 .body_product {
+
     display: flex;
+    justify-content: left;
+
     gap: 100px;
     max-width: 1200px;
     margin: 20px auto;
@@ -88,8 +97,8 @@
 }
 
 .image-box {
-    text-align: right;
-    justify-content: right;
+
+
     align-items: center;
 
 }
@@ -100,8 +109,6 @@
     max-width: 400px;
     height: auto;
     border-radius: 10px;
-    text-align: left;
-    justify-content: left;
 
 }
 

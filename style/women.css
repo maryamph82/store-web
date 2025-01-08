@@ -1,3 +1,10 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: brand_font;
     src: url(../font/Galindo/Galindo-Regular.ttf);
@@ -30,7 +37,7 @@
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menue {
+.menu {
     border-radius: 50px;
     background-color: #607c3b;
     padding: 10px 0;
@@ -114,5 +121,3 @@
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-

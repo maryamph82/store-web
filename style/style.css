@@ -34,24 +34,39 @@
 
 /* start menu style */
 
+
 @font-face {
     font-family: menu;
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menue {
+.searchBox {
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .25s;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
+}
+
+.searchBox:focus {
+    box-shadow: 5px 8px 1px rgb(41, 38, 38);
+}
+
+.menu-option {
+    height: 50px;
     border-radius: 50px;
     background-color: #607c3b;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.menu-option {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .option {
@@ -166,3 +181,42 @@ input {
     height: 200px;
     width: 200px;
 }
+
+/* ABOUT FOOTER */
+
+.about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    /* clamp(min , tarjiham , max) */
+    width: clamp(400px 800px 1400px);
+    background-color: #c9c0c096;
+}
+
+
+.rightOp {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerOp {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.atten{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
