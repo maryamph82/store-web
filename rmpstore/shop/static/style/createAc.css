@@ -1,7 +1,3 @@
-body {
-    background-color: #b1e7ee;
-}
-
 @font-face {
     font-family: title-font;
     src: url(../font/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
@@ -25,7 +21,6 @@ body {
 
 }
 
-
 /* start menu style */
 
 @font-face {
@@ -34,10 +29,10 @@ body {
 }
 
 .menue {
+    border-radius: 50px;
     background-color: #607c3b;
     padding: 10px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
 }
 
 .menu-option {
@@ -71,47 +66,54 @@ body {
 
 /* end menu style */
 
-.white__bgColor {
-    border-radius: 40px;
+
+input {
+    width: 331px;
+    border: none;
+    outline: none;
+    background: #E8ECD7;
+    padding: 30px;
+    margin: 15px;
+    border-radius: 60px;
+
+}
+
+body {
+    background-color: #b1eed7;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
     max-width: 400px;
-    padding: 60px 10px;
+    padding: 100px 100px;
     margin: 100px auto;
+    border-radius: 50px;
 }
-
-input {
-    max-width: 500px;
-    min-width: 250px;
-    border: none;
-    outline: none;
-    background: #E8ECD7;
-    padding: 20px;
-    margin: 8px;
-    border-radius: 60px;
-}
-
-.inputs {
-    display: flex;
-    flex-direction: column;
-}
-
 
 button {
     color: white;
-    padding: 10px;
+    padding: 15px;
     max-width: 500px;
     min-width: 278px;
-    border: none;
-    background-color: rgb(106, 158, 106);
-    margin-top: 30px;
+    background-color: rgb(132, 137, 132);
+    margin-top: 40px;
+    margin-bottom: 10px;
 }
+
 
 .title {
     font-family: title-font;
     font-size: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+
 }

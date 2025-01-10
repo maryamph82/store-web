@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5733b051-3a4a-4a43-8f3b-2070d219e459" name="Changes" comment="connecting template to the store" />
+    <list default="true" id="5733b051-3a4a-4a43-8f3b-2070d219e459" name="Changes" comment="connecting template to the store">
+      <change afterPath="$PROJECT_DIR$/rmpstore/shop/templates/createAccount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rmpstore/shop/templates/kids.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rmpstore/shop/templates/manpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rmpstore/shop/templates/womanpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/rmpstore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/rmpstore/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/createAccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/kids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/men page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/script/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/static/style/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/static/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/static/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/static/women page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/templates/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/templates/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rmpstore/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/rmpstore/shop/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/rmpstore" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -22,14 +46,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/project/rmpstore/shop/static/images"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project\rmpstore\shop\static\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\rmpstore\shop\templates" />
       <recent name="C:\project\rmpstore\shop" />
     </key>
   </component>

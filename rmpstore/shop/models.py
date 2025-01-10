@@ -4,14 +4,14 @@ from django.db.models.fields.related_descriptors import ForeignKeyDeferredAttrib
 
 
 class Category(models.Model):
-    c_id = models.CharField(max_length=10)
+    category_id = models.IntegerField()
     name = models.CharField(max_length=25)
 
     def __str__(self):
-        return f'{self.c_id} {self.name}'
+        return f'{self.category_id} {self.name}'
 
 class User(models.Model):
-    u_id = models.CharField(max_length=10)
+    user_id = models.IntegerField()
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     nation_code = models.CharField(max_length=10)
@@ -19,7 +19,7 @@ class User(models.Model):
     password = models.CharField(max_length=30)
 
     def __str__(self):
-        return f'{self.u_id} {self.first_name} {self.last_name}'
+        return f'{self.user_id} {self.first_name} {self.last_name}'
 
 class Product(models.Model):
     GENDER_CHOICES = [
@@ -28,20 +28,20 @@ class Product(models.Model):
         ('child','کودک'),
         ('sport','اسپرت')
     ]
-    p_id = models.CharField(max_length=10)
+    product_id = models.IntegerField()
     name = models.CharField(max_length=30)
     color = models.CharField(max_length=30)
-    number = models.IntegerField(default=0)
-    category = models.ForeignKey(Category , on_delete=models.CASCADE , default=1)
-    user = models.ForeignKey(User , on_delete=models.CASCADE)
-    type = models.CharField(max_length=30)
+    quantity = models.IntegerField(default=0)
+    category_id = models.ForeignKey(Category , on_delete=models.CASCADE , default=1)
+    user_id = models.ForeignKey(User , on_delete=models.CASCADE)
+    material = models.CharField(max_length=30)
     brand = models.CharField(max_length=30)
     gender = models.CharField(max_length=6 , choices=GENDER_CHOICES, default='sport')
     price = models.DecimalField(default=0,decimal_places=2,max_digits=12)
     picture = models.ImageField(upload_to='upload/product/')
 
     def __str__(self):
-        return f'{self.p_id} {self.p_name}'
+        return f'{self.product_id} {self.name}'
 
 class Coat(models.Model):
     SIZES = [
@@ -49,56 +49,55 @@ class Coat(models.Model):
         ('l',40),
         ('xl',42)
     ]
-    c_id = models.CharField(max_length=10)
-    product = models.ForeignKey(Product,on_delete=models.CASCADE)
+    coat_id = models.IntegerField()
+    product_id = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     size = models.CharField(max_length=3,choices=SIZES,default='m')
 
     def __str__(self):
-        return f'{self.c_id} {self.size}'
+        return f'{self.coat_id} {self.size}'
 
 
 class Hat(models.Model):
-    h_id = models.CharField(max_length=10)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    hat_id = models.IntegerField()
+    product_id = models.ForeignKey(Product, on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
 
     def __str__(self):
-        return f'{self.h_id}'
+        return f'{self.hat_id}'
 
 
 class Bag(models.Model):
-    b_id = models.CharField(max_length=10)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    bag_id = models.IntegerField()
+    product_id = models.ForeignKey(Product, on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
 
     def __str__(self):
-        return f'{self.b_id}'
+        return f'{self.bag_id}'
 
 class Socks(models.Model):
-    s_id = models.CharField(max_length=10)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    socks_id = models.IntegerField()
+    product_id = models.ForeignKey(Product, on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
-    design = models.CharField(max_length=30)
 
     def __str__(self):
-        return f'{self.s_id} {self.design}'
+        return f'{self.socks_id}'
 
-class Scarf(models.Model):
+class Scarves(models.Model):
     SEASON_CHOICE = [
         ('spring','بهار'),
-        ('summar','تابستان'),
+        ('summer','تابستان'),
         ('autumn','پاییز'),
         ('winter','زمستان')
     ]
-    s_id = models.CharField(max_length=10)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
+    scarf_id = models.IntegerField()
+    product_id = models.ForeignKey(Product, on_delete=models.CASCADE)
     season = models.CharField(max_length=6,choices=SEASON_CHOICE,default='spring')
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     design = models.CharField(max_length=30)
 
     def __str__(self):
-        return f'{self.s_id} {self.season} {self.design}'
+        return f'{self.scarf_id} {self.season} {self.design}'
 
 class Shoes(models.Model):
     SIZES = [
@@ -108,13 +107,13 @@ class Shoes(models.Model):
         ('قالب بزرگ',41),
         ('قالب خیلی بزرگ',42)
     ]
-    sh_id = models.CharField(max_length=10)
+    shoe_id = models.IntegerField()
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     size = models.CharField(max_length=15,choices=SIZES,default=1)
 
     def __str__(self):
-        return f'{self.sh_id} {self.size} {self.description}'
+        return f'{self.shoe_id} {self.size} {self.description}'
 
 class Shirt(models.Model):
     SIZES = [
@@ -122,13 +121,13 @@ class Shirt(models.Model):
         ('l',40),
         ('xl',42)
     ]
-    sh_id = models.CharField(max_length=10)
+    shirt_id = models.IntegerField()
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
-        return f'{self.sh_id} {self.size}'
+        return f'{self.shirt_id} {self.size}'
 
 class Hoodie(models.Model):
     HAT_CHOICE = [
@@ -140,22 +139,22 @@ class Hoodie(models.Model):
         ('l',40),
         ('xl',42)
     ]
-    h_id = models.CharField(max_length=10)
+    hoodie_id = models.IntegerField()
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     hat = models.CharField(max_length=1,choices=HAT_CHOICE,default='0')
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
-        return f'{self.sh_id} {self.size} {self.description}'
+        return f'{self.hoodie_id} {self.size} {self.description}'
 
 class Belt(models.Model):
-    b_id = models.CharField(max_length=10)
+    belt_id = models.IntegerField()
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
 
     def __str__(self):
-        return f'{self.b_id} {self.description}'
+        return f'{self.belt_id} {self.description}'
 
 class Pants(models.Model):
     SIZES = [
@@ -163,13 +162,13 @@ class Pants(models.Model):
         ('l',40),
         ('xl',42)
     ]
-    p_id = models.CharField(max_length=10)
+    pant_id = models.IntegerField()
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
-        return f'{self.p_id} {self.size} {self.description}'
+        return f'{self.pant_id} {self.size} {self.description}'
 
 class Skirt(models.Model):
     SIZES = [
@@ -177,16 +176,16 @@ class Skirt(models.Model):
         ('l',44),
         ('xl',46)
     ]
-    s_id = models.CharField(max_length=10)
+    skirt_id = models.IntegerField()
     product = models.ForeignKey(Product,on_delete=models.CASCADE)
     description = models.CharField(max_length=500 , default=' ',blank=False,null=False)
     size = models.CharField(max_length=3,choices=SIZES,default=1)
 
     def __str__(self):
-        return f'{self.p_id} {self.size} {self.description}'
+        return f'{self.skirt_id} {self.size} {self.description}'
 
 class Order(models.Model):
-    o_id = models.CharField(max_length=10)
+    o_id = models.IntegerField()
     product = models.ForeignKey(Product , on_delete=models.CASCADE)
     user = models.ForeignKey(User , on_delete=models.CASCADE)
     date = models.DateField(default=datetime.datetime.today())

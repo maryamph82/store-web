@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact to R.M.P store</title>
+    <link rel="stylesheet" href='{% static "style/contact.css" %}'>
+</head>
+
+<body>
+        <!-- brand in front of web page -->
+
+        <div class="brand__name">
+
+            <div class="big__brand">R.M.P</div>
+            <div class="small__brand">store</div>
+        </div>
+
+    <!-- menu -->
+    {% include 'navbar.html' %}
+
+    <div class="brand-icon"> <img src='{% static "/images/R.M.P icon.png" %}' alt="R.M.P" height="300px" width="300px"></div>
+    <div class="discription">
+        <p>hi welcome to R.M.P store We are honored that you have chosen our site to buy your clothes.
+            This site was established in 2024. We are always trying to provide you with facilities on this site so that
+            you can have a safe and comfortable shopping experience.
+            Your satisfaction with the products, timely delivery of products to customers, secure payment and 24-hour
+            support have led many customers to trust us and make their purchases from this site.
+            you just , select your gender, then choose the product you want from hundreds of products.
+        </p>
+    </div>
+
+    <div class="contact-icons">
+        <a href="https://t.me" target="_blank">
+            <i class="fab fa-telegram"><img src='{% static "images/telegram icon.webp" %}' alt="telegram icon"
+                    style="height: 40px;"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube"><img src='{% static "images/whatsapp icon.jpg" %}' alt="whatsapp icon" style="height: 40px;"></i>
+        </a>
+        <a href="https://wa.me/yourphonenumber" target="_blank">
+            <i class="fab fa-whatsapp"><img src='{% static "images/youtube.png" %}' alt="youtube icon" style="height: 40px;"></i>
+        </a>
+    </div>
+
+</body>
+
+</html>

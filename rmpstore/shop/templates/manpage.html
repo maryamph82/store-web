@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>men page</title>
+    <link rel="stylesheet" href='{% static "style/men.css" %}'>
+</head>
+
+<body>
+    <!-- brand in front of web page -->
+
+    <div class="brand__name">
+
+        <div class="big__brand">R.M.P</div>
+        <div class="small__brand">store</div>
+    </div>
+
+    <!-- menu -->
+    {% include 'navbar.html' %}
+
+    <!-- categorys -->
+
+    <div class="categorys">
+        <div class="category_box"><a href=""><img src="" alt=""></a></div>
+        <div class="category_box"><img src="" alt=""></div>
+        <div class="category_box"><img src="" alt=""></div>
+        <div class="category_box"><img src="" alt=""></div>
+    </div>
+
+
+</body>
+
+</html>

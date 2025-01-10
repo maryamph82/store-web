@@ -1,0 +1,24 @@
+<nav class="menue">
+        <ul class="menu-option">
+            <li class="option"><a href="{% url 'home' %}">home</a></li>
+            <li class="option"><a href="{% url 'men' %}">men</a></li>
+            <li class="option"><a href="{% url 'women' %}">women</a></li>
+            <li class="option"><a href="{% url 'kids' %}">kids</a></li>
+            <li class="option"><a href="{% url 'contact' %}"> contact to us</a></li>
+            {% if user.is_authenticated %}
+            <li class="option"><a href="{% url 'logout' %}">logout</a></li>
+            {% else %}
+            <li class="option"><a href ="{% url 'login' %}"> login</a></li>
+            <li class="option"><a href="{% url 'createAccount' %}">create account</a></li>
+            {% endif %}
+
+        </ul>
+</nav>
+    {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+    {% endif %}
