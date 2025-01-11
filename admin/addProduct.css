@@ -5,13 +5,22 @@
     box-sizing: border-box;
 
 }
-
-/* start menu */
-
+@font-face {
+    font-family: title-font;
+    src: url(../font/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
+}
 @font-face {
     font-family: menu;
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* start menu */
+
 
 .menu-option {
     height: 50px;
@@ -48,30 +57,55 @@
 
 /* end menu */
 
-.step1 {
-
-    display: flex;
-    gap: 20px;
-    font-size: 20px;
-    justify-content: left;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.title{
+    font-family: title-font;
+    font-size: 35px;
 }
 
-.step2 {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 40px;
-    gap: 15px;
+.productType {
+    font-family: title-font;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin: 40px;
+    display: block;
 }
 
-.step3{
+input {
+    max-width: 500px;
+    min-width: 250px;
+    border: none;
+    outline: none;
+    background: #E8ECD7;
+    padding: 20px;
+    margin: 8px;
+    border-radius: 60px;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 80px;
+    border: none;
+    transition: 0.3s;
+    margin: 0px auto;
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding: 40px;
-    gap: 20px;
+    margin-top: 60px;
+}
+
+button:hover {
+    color: #333;
+    background-color: #e9a4a4;
+
+
+}
+
+
+.inputs {
+    padding: 100px 50px;
+    border-radius: 30px;
+    background-color: #cdecd2;
+    margin: 40px auto;
+
 }

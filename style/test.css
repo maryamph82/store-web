@@ -1,20 +1,15 @@
-form {
-    display: flex;
-    align-items: center;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+button{
+  /* margin: 10px; */
+  /*margin : 10px --> top , left , bottom right*/
+
+  /* margin: 10px 90px; */
+  /*margin-top : 10px , margin-right:90px , margin-bottom: 10px , margin-left: 90px*/
+
+  /* margin: 10px 30px 20px; */
+  /* margin-top :10px , margin right && left : 30px , margin-bottom : 20px*/
+
+  margin: 0 auto
+}
+
+
+                

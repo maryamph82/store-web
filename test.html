@@ -1,25 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/test.css">
+    <title>Document</title>
+</head>
 <body>
-
-<h2>انتخاب جنسیت</h2>
-<form>
-  <label for="gender">جنسیت:</label>
-  <select id="gender" name="gender">
-    <option value="man">مرد</option>
-    <option value="woman">زن</option>
-    <option value="child">بچه</option>
-  </select>
-</form>
-
-<p>کاربر گزینه‌ای انتخاب نکرده است.</p>
-
-<script>
-document.getElementById('gender').addEventListener('change', function() {
-  var selected = this.options[this.selectedIndex].text;
-  document.querySelector('p').textContent = 'کاربر گزینه‌ی ' + selected + ' را انتخاب کرده است.';
-});
-</script>
-
+    <button>
+        click
+    </button>
 </body>
 </html>

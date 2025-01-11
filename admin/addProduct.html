@@ -15,41 +15,33 @@
         <li class="option"><a href="editProduct.html">Edit product information</a></li>
         <li class="option"><a href="confirmation.html">Customer order confirmation</a></li>
     </ul>
-    <!--step 1 : choose gender of product -->
-    <div class="step1">
-        <div class="gender">women <input type="checkbox"></div>
-        <div class="gender">men <input type="checkbox"></div>
-        <div class="gender">kids<input type="checkbox"></div>
-    </div>
-    <hr>
-    <!-- step 2 : choose type of product -->
-    <div class="step2">
-        <div class="women">
-            <div class="type">scarf</div>
-        </div>
-        <div class="men">
-            <div class="type">coat</div>
-        </div>
-    </div>
 
-    <hr>
-    <!--step 3 :  Enter product details  -->
-    <div class="step3">
-        <div class="coat">
-            <div class="title">coat</div>
-            <div class="inputs"><input type="text" placeholder="name"></div>
-            <div class="inputs"><input type="text" placeholder="color"></div>
-        </div>
-        <div class="scarf">
-            <div class="title">scarf</div>
-            <div class="inputs"><input type="text" placeholder="name"></div>
-            <div class="inputs"><input type="text" placeholder="color"></div>
-        </div>
-    </div>
-    <hr>
-    <!-- step 4 : submit -->
-    <input type="submit">
+    <div class="inputs">
+        <div class="title">add products</div>
+        <!--step 0 : choose type of product -->
+        <label for="productType" class="productType">product type</label>
+        <select id="productType" name="productType" onchange="showAdditionalFields()">
+            <option value="shirt">tSirt</option>
+            <option value="jacket">cote</option>
+            <option value="hoodie">hoodi</option>
+        </select>
 
+
+        <!--step 1 : Enter the common characteristics of the products -->
+        <div class="step1">
+            <div class="product_det"><input type="text" placeholder="name"></div>
+            <div class="product_det"><input type="text" placeholder="color"></div>
+            <div class="product_det"><input type="number" placeholder="quantity"></div>
+            <div class="product_det"><input type="text" placeholder="brand"></div>
+            <div class="product_det"><input type="text" placeholder="gender"></div>
+            <div class="product_det"><input type="text" placeholder="category"></div>
+            <div class="product_det"><input type="number" placeholder="price"></div>
+            <div class="product_det"><input type="file"></div>
+        </div>
+
+        <!-- step 2 : submit -->
+        <button>submit</button>
+    </div>
 </body>
 
 </html>
