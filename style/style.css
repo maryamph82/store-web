@@ -81,6 +81,8 @@
     transition: color 0.3s, background-color 0.3s;
     padding: 10px;
     border-radius: 5px;
+    align-items: center;
+    display: flex;
 }
 
 .option a:hover {
