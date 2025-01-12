@@ -10,8 +10,8 @@
     src: url(../font/Galindo/Galindo-Regular.ttf);
 }
 
-.women_page {
-    background-color: rgb(219, 165, 183);
+body {
+    background-color: #f3f3f3;
 }
 
 
@@ -81,7 +81,7 @@
 
 
 /* categorys */
-/* radif 1 */
+
 
 .categorys {
 
@@ -112,12 +112,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 224px;
+    margin: 30px;
     margin-top: 10px;
+    gap: 248px;
 
 }
 
 .category_title {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/*  */

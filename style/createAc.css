@@ -2,10 +2,17 @@
     font-family: title-font;
     src: url(../font/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
 }
+
 @font-face {
     font-family: brand_font;
     src: url(../font/Galindo/Galindo-Regular.ttf);
 }
+
+
+body {
+    background-color: #b1eed7;
+}
+
 /* brand*/
 
 .brand__name {
@@ -78,9 +85,6 @@ input {
 
 }
 
-body {
-    background-color: #b1eed7;
-}
 
 .inputs {
     display: flex;
