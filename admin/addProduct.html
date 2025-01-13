@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add product</title>
-    <link rel="stylesheet" href="addProduct.css">
+    <link rel="stylesheet" href="/style/addProduct.css">
 </head>
 
 <body>
@@ -16,30 +16,91 @@
         <li class="option"><a href="confirmation.html">Customer order confirmation</a></li>
     </ul>
 
-    <div class="inputs">
+    <div class="form">
         <div class="title">add products</div>
         <!--step 0 : choose type of product -->
-        <label for="productType" class="productType">product type</label>
-        <select id="productType" name="productType" onchange="showAdditionalFields()">
-            <option value="shirt">tSirt</option>
-            <option value="jacket">cote</option>
-            <option value="hoodie">hoodi</option>
-        </select>
+        <div class="inputs">
+            <label for="productType">Product Type:</label>
+            <select id="productType" name="productType" required>
+                <option value="">Select a product type</option>
+                <option value="hoodie">Hoodie</option>
+                <option value="tshirt">T-shirt</option>
+                <option value="shoe">Shoe</option>
+            </select>
+        </div>
 
 
         <!--step 1 : Enter the common characteristics of the products -->
-        <div class="step1">
-            <div class="product_det"><input type="text" placeholder="name"></div>
-            <div class="product_det"><input type="text" placeholder="color"></div>
-            <div class="product_det"><input type="number" placeholder="quantity"></div>
-            <div class="product_det"><input type="text" placeholder="brand"></div>
-            <div class="product_det"><input type="text" placeholder="gender"></div>
-            <div class="product_det"><input type="text" placeholder="category"></div>
-            <div class="product_det"><input type="number" placeholder="price"></div>
-            <div class="product_det"><input type="file"></div>
+        <div class="inputs" id="commonFields">
+
+            <!-- name of product -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- color of product -->
+            <label for="color">Color:</label>
+            <input type="text" id="color" name="color" required>
+
+
+            <!-- brand ... -->
+            <label for="brand">Brand</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <!-- quantity ... -->
+            <label for="quantity">quantity</label>
+            <input type="number" id="quantity" name="quantity" required>
+
+            <!-- price ...  -->
+            <label for="price">price</label>
+            <input type="number" id="price" name="price" required>
+
+            <!-- gender ...  -->
+            <label for="gender">choose gender : </label>
+            <select name="gender" id="gender">
+                <option value="Larg">men</option>
+                <option value="Medium">women</option>
+                <option value="Small">kids</option>
+            </select>
+            <!-- material -->
+
+            <label for="material">material : </label>
+            <input type="text" id="material" name="material" required>
+
+            <!-- image ...  -->
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+
+            <!-- description ... -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
         </div>
 
-        <!-- step 2 : submit -->
+        <!-- step 2 : Specific fields for each product -->
+        <div class="input" id="hoodieFields">
+
+            <!--has hood or no  -->
+            <label for="hasHood">Has Hood:</label>
+            <input type="checkbox" id="hasHood" name="hasHood">
+
+        </div>
+
+
+
+        <div class="inputs" id="size">
+            <!-- size of product -->
+            <label for="productSize">size</label>
+            <select name="size" id="hoodi_size">
+                <option value="Larg">Larg</option>
+                <option value="Medium">Medium</option>
+                <option value="Small">Small</option>
+            </select>
+        </div>
+
+
+
+
+
+
         <button>submit</button>
     </div>
 </body>
