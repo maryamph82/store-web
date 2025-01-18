@@ -1,0 +1,61 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: title-font;
+    src: url(/font/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf);
+}
+
+@font-face {
+    font-family: menu;
+    src: url(/font/Galindo/Galindo-Regular.ttf);
+}
+
+body {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+/* start menu */
+
+
+.menu-option {
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7b915e;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    margin: 0 15px;
+}
+
+.option a {
+    font-family: menu;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.option a:hover {
+    color: #697260;
+    background-color: #cdecd2;
+}
+
+/* end menu */

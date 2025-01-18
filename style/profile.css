@@ -1,0 +1,138 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* add font */
+
+@font-face {
+    font-family: brand_font;
+    src: url(../font/Galindo/Galindo-Regular.ttf);
+}
+
+/* brand*/
+
+.brand__name {
+
+    display: flex;
+    column-gap: 10px;
+    background-color: #84e484;
+    padding: 10px;
+    font-size: 15px;
+    font-family: brand_font;
+    color: white;
+    justify-content: center;
+
+}
+
+/* start menu style */
+
+
+@font-face {
+    font-family: menu;
+    src: url(/font/Galindo/Galindo-Regular.ttf);
+}
+
+.searchBox {
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .25s;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
+}
+
+.searchBox:focus {
+    box-shadow: 5px 8px 15px 5px rgb(20, 20, 20);
+}
+
+.menu-option {
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7b915e;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option {
+    margin: 0 15px;
+}
+
+.option a {
+    font-family: menu;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+}
+
+.option a:hover {
+    color: #697260;
+    background-color: #cdecd2;
+}
+
+/* end menu style */
+/* profile */
+
+.profile-container {
+    font-size: 20px;
+    background-color: #a6cab5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 500px;
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+}
+
+.profile-container h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.profile-container p {
+    font-size: 20px;
+    color: #000000;
+    text-align: left;
+}
+
+.profile-container h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #000000;
+}
+
+.profile-container ul {
+    list-style-type: none;
+
+}
+
+.profile-container ul li {
+
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 18px;
+    border-radius: 10px;
+}

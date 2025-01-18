@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="/style/profile.css">
+</head>
+
+<body>
+
+    <!-- menu -->
+
+    <ul class="menu-option">
+        <input class="searchBox" type="search" placeholder="Search...">
+        <li class="option"><a href="UserPage.html">home</a></li>
+        <li class="option"><a href="women page.html">women</a></li>
+        <li class="option"><a href="men page.html">men</a></li>
+        <li class="option"><a href="kids.html">kids</a></li>
+        <li class="option"><a href="contact.html"> contact to us</a></li>
+        <li class="option"><a href="home page.html">exit</a></li>
+        <li class="option"><a href="shoppingCart.html"><img src="/images/shopping-cart-icon-md.png" alt="shopping cart"
+                    style="width: 30px; height: 30px;"></a></li>
+        <li class="option"><a href="userProf.html"><img src="/images/User account icon.png" alt="account"
+                    style="width: 30px; height: 30px;"></a></li>
+    </ul>
+<!-- profile  -->
+    <div class="profile-container">
+        <div class="title">
+            <h2>PROFILE</h2>
+        </div>
+        <div class="profile-info">
+            <div class="title"></div>
+            <p> name :<span id="userName"></span></p>
+            <p> email :<span id="userEmail"></span></p>
+        </div>
+        <div class="purchase-history">
+            <h3>Purchase history</h3>
+            <ul id="purchaseList">
+                <!-- history of purchaseList -->
+            </ul>
+        </div>
+        <div class="cart">
+            <h3>cart list</h3>
+            <ul id="cartList">
+                <!-- cart list items -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="/script/profile.js"></script>
+
+</body>
+
+</html>

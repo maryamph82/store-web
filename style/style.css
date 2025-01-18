@@ -193,7 +193,6 @@ input {
     flex-direction: column;
     gap: 10px;
     font-size: 18px;
-    /* clamp(min , tarjiham , max) */
     width: clamp(400px 800px 1400px);
     background-color: #c9c0c096;
 }

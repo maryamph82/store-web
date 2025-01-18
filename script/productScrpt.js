@@ -8,7 +8,7 @@ window.addEventListener('load', function () { document.body.classList.add('loade
 
 
 function buy() {
-    document.getElementById("paragraph").innerHTML = "Paragraph changed.";
+    document.getElementById("paragraph").innerHTML = "this product add to your cart list";
 
     localStorage.setItem('name', productName.innerHTML)
     localStorage.setItem('price', productPrice.innerHTML)
@@ -33,6 +33,3 @@ function buy() {
 
 console.log(productsArray)
 
-//  اضافه کردن همه ی محصولاتی که
-//  کابر انتخاب میکند (وقتی که دکمه ی خرید را میزند
-//  ) به صفحه ی سبد حرید و نشان دادن ان ها 

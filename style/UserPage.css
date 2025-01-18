@@ -1,16 +1,20 @@
-@font-face {
-    font-family: title-font;
-    src: url(../font/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.all-of-body {
+    background-color: #f3f3f3;
+}
+
+
+/* add font */
 
 @font-face {
     font-family: brand_font;
     src: url(../font/Galindo/Galindo-Regular.ttf);
-}
-
-
-body {
-    background-color: #b1eed7;
 }
 
 /* brand*/
@@ -30,28 +34,42 @@ body {
 
 /* start menu style */
 
+
 @font-face {
     font-family: menu;
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menu {
-    border-radius: 50px;
-    background-color: #607c3b;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.searchBox {
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .25s;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
+}
+
+.searchBox:focus {
+    box-shadow: 5px 8px 15px 5px rgb(20, 20, 20);
 }
 
 .menu-option {
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7b915e;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .option {
-
     margin: 0 15px;
 }
 
@@ -63,65 +81,17 @@ body {
     transition: color 0.3s, background-color 0.3s;
     padding: 10px;
     border-radius: 5px;
+    align-items: center;
+    display: flex;
 }
 
 .option a:hover {
-    color: #333;
-    background-color: #f2f2f2;
+    color: #697260;
+    background-color: #cdecd2;
 }
 
 
 /* end menu style */
-
-
-input {
-    width: 331px;
-    border: none;
-    outline: none;
-    background: #E8ECD7;
-    padding: 30px;
-    margin: 15px;
-    border-radius: 60px;
-
-}
-
-
-.inputs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    max-width: 400px;
-    padding: 100px 100px;
-    margin: 100px auto;
-    border-radius: 50px;
-}
-
-button {
-    color: white;
-    padding: 15px;
-    max-width: 500px;
-    min-width: 278px;
-    background-color: rgb(132, 137, 132);
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-
-
-.title {
-    font-family: title-font;
-    font-size: 35px;
-    margin-bottom: 10px;
-
-}
-
 
 /* start footer style */
 

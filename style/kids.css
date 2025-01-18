@@ -115,3 +115,45 @@ body{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+
+/* start footer style */
+
+.about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    height: 400px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    width: clamp(400px 800px 1400px);
+    background-color: #c9c0c096;
+}
+
+
+.rightOp {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerOp {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.atten{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+/* end footer style */
