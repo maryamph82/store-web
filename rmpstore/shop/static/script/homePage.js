@@ -1,6 +1,8 @@
 const input = document.querySelector('input')
 let search = ''
+
 input.addEventListener('keydown', searchFunc)
+
 function searchFunc(event) {
     if (event.key == "Enter") {
         console.log(event.key)

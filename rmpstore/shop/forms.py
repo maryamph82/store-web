@@ -1,8 +1,10 @@
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm,UserChangeForm,User
 from django import forms
 
-class CreateAcc(UserCreationForm):
+from .models import CustomUser
+
+
+class CustomUserCreationForm(UserCreationForm):
     first_name = forms.CharField(
         label="",
         max_length=50,
@@ -22,15 +24,15 @@ class CreateAcc(UserCreationForm):
         widget=forms.PasswordInput(attrs={'class': 'form-control', 'name': 'password', 'type': 'password',
                                           'placeholder': 'password(confirm)'}),
     )
-    phone = forms.CharField(
+    phone_number = forms.CharField(
         label="",
         max_length=13,
         widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'phone'}),
     )
-    email = forms.EmailField(
-        label="",
-        widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'email'}),
-    )
+    # email = forms.EmailField(
+    #     label="",
+    #     widget=forms.EmailInput(attrs={'class': 'form-control', 'placeholder': 'email'}),
+    # )
     postal_code = forms.CharField(
         label="",
         max_length=20,
@@ -45,11 +47,19 @@ class CreateAcc(UserCreationForm):
     label="",
     widget=forms.DateInput(attrs={'type': 'date'}),
     )
-    username = forms.CharField(
+    national_code = forms.CharField(
         label="",
         max_length=20,
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'username'}),
+        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'national code'}),
     )
+
     class Meta:
-        model = User
-        fields = ('first_name','last_name','username','password1','password2','email','birth_day','postal_code','address','phone')
+        model = CustomUser
+        fields = ("phone_number", "first_name", "last_name", "national_code","postal_code","address", "password1","password2","birth_date")
+
+
+class CustomUserChangeForm(UserChangeForm):
+
+    class Meta:
+        model = CustomUser
+        fields = ("phone_number", "first_name", "last_name", "national_code","postal_code","address","birth_date")

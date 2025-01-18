@@ -1,4 +1,4 @@
-<nav class="menue">
+<nav class="menu">
         <ul class="menu-option">
             <li class="option"><a href="{% url 'home' %}">home</a></li>
             <li class="option"><a href="{% url 'men' %}">men</a></li>
@@ -14,11 +14,29 @@
 
         </ul>
 </nav>
-    {% if messages %}
-            {% for message in messages %}
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                {{ message }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            {% endfor %}
-    {% endif %}
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert"
+             style="position: fixed;
+                    top: 80px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    max-width: 600px;
+                    background-color: #6b9b76;
+                    color: white;
+                    border: none;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 5px;
+                    z-index: 1000;
+                    font-family: 'Lalezar', sans-serif;
+                    direction: rtl;
+                    unicode-bidi: isolate;">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+
+

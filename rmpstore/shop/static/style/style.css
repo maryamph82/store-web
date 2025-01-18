@@ -34,28 +34,42 @@
 
 /* start menu style */
 
+
 @font-face {
     font-family: menu;
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menue {
-    border-radius: 50px;
-    background-color: #607c3b;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.searchBox {
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .25s;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
+}
+
+.searchBox:focus {
+    box-shadow: 5px 8px 15px 5px rgb(20, 20, 20);
 }
 
 .menu-option {
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7b915e;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .option {
-
     margin: 0 15px;
 }
 
@@ -70,8 +84,8 @@
 }
 
 .option a:hover {
-    color: #333;
-    background-color: #f2f2f2;
+    color: #697260;
+    background-color: #cdecd2;
 }
 
 
@@ -81,16 +95,23 @@
 
 
 .gender_choos {
-
+    border-radius: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 10px;
+    margin-top: 30px;
+
 
 }
 
 .gender_choos img {
     border-radius: 50px;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 input {
@@ -156,15 +177,45 @@ input {
 
 .image-box img {
     border-radius: 20px;
+    height: 200px;
+    width: 200px;
 }
 
+/* ABOUT FOOTER */
 
-.choos-gender-title {
-    gap: 385px;
+.about {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 35px;
-    background-color: aliceblue;
+    height: 400px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+    /* clamp(min , tarjiham , max) */
+    width: clamp(400px 800px 1400px);
+    background-color: #c9c0c096;
 }
+
+
+.rightOp {
+    display: flex;
+    flex-direction: column;
+}
+
+.centerOp {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.atten{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+

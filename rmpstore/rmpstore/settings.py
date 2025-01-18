@@ -67,10 +67,15 @@ WSGI_APPLICATION = 'rmpstore.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'store_system',
+        'USER': 'maryam',
+        'PASSWORD': '123456',
+        'HOST': '78.38.35.219',
+        'PORT': '5432',
     }
 }
+
 
 
 
@@ -117,3 +122,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR , 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'shop.CustomUser'
+AUTHENTICATION_BACKENDS = ['shop.authentication_backends.PhoneNumberBackend', 'django.contrib.auth.backends.ModelBackend']

@@ -4,17 +4,20 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django import forms
-from .forms import CreateAcc
+from .forms import CustomUserCreationForm
+from .models import Product
+
 
 def main_page(request):
-    return render(request,'homepage.html')
+    all_product = Product.objects.all()
+    return render(request,'homepage.html',{'products':all_product})
 
 def login_user(request):
     if request.method == "POST":
-        username = request.POST['username']
+        phone_number = request.POST['phone_number']
         password = request.POST['password']
 
-        user = authenticate(request, username=username, password=password)
+        user = authenticate(request, phone_number=phone_number, password=password)
         if user is not None:
             login(request, user)
             messages.success(request,("با موفقیت وارد شدید"))
@@ -24,14 +27,14 @@ def login_user(request):
         return render(request , 'login.html')
 
 def create_acc(request):
-    form = CreateAcc()
+    form = CustomUserCreationForm()
     if request.method == "POST":
-        form = CreateAcc(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            username = form.cleaned_data['username']
+            phone_number = form.cleaned_data['phone_number']
             password = form.cleaned_data['password']
-            user = authenticate(request , username = username , password = password)
+            user = authenticate(request , phone_number = phone_number , password = password)
             login(request,user)
             messages.success(request, ("اکانت شما با موفقیت ساخته شد"))
             return redirect("home")
@@ -53,8 +56,9 @@ def man_page(request):
 def woman_page(request):
     return render(request , 'womanpage.html')
 
-def product_page(request):
-    return render(request , 'product.html')
+def product_page(request,pk):
+    product = Product.objects.get(id=pk)
+    return render(request , 'product.html' , {'product':product})
 
 def logout_user(request):
     logout(request)

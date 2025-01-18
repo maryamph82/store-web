@@ -3,10 +3,10 @@
 <html lang="en">
 
 <head>
-    <link rel='{% static "icon" %}' type='{% static "image/x-icon" %}' href='{% static "/images/web icon3.png" %}'>
-    <meta charset='{% static "UTF-8" %}'>
+    <link rel="icon" type='{% static "image/x-icon" %}' href='{% static "/images/web icon3.png" %}'>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='{% static "stylesheet" %}' href='{% static "style/style.css"} %'>
+    <link rel="stylesheet" href='{% static "style/style.css" %}'>
     <title>R.M.P store</title>
 </head>
 
@@ -22,32 +22,27 @@
         </div>
 
         <!-- menu -->
+
         {% include 'navbar.html' %}
 
         <!-- choos gender products -->
         <div class="choos gender products">
-            <br>
-            <br>
-            <div class="choos-gender-title">
-                <p>man</p>
-                <p>kids</p>
-                <p>women</p>
 
-            </div>
+
             <div class="gender_choos">
                 <!-- men -->
-                <a href="manpage.html" target="_blank">
-                    <img src='{% static "images/men icon.jpg" %}' alt='{% static "men page icon" %}' title="men page" height="350px" width="100%">
+                <a href='{% url "men" %}' target="_blank">
+                    <img src='{% static "images/men icon.png" %}' alt="men page icon" title="men page" height="350px" width="100%">
                 </a>
 
                 <!-- kids -->
-                <a href="{% url 'kids' %}" target="_blank">
-                    <img src='{% static "images/kids style 6.avif" %}' alt='{% static "kids icon" %}' title="kid page" height="350px" width="100%">
+                <a href='{% url "kids" %}' target="_blank">
+                    <img src='{% static "images/kids icon.png" %}' alt="kids icon" title="kid page" height="350px" width="100%">
                 </a>
                 <!-- women -->
 
-                <a href='{% url "women" %}' target="_blank">
-                    <img src='{% static "images/woman icon.avif" %}' alt='{% static "women page icon" %}' title="women page" height="350px"
+                <a href='{% url "kids" %}' target="_blank">
+                    <img src='{% static "images/women icon.png" %}' alt="women page icon" title="women page" height="350px"
                         width="100%">
                 </a>
 
@@ -60,16 +55,28 @@
             <p>newest products</p>
         </div>
         <div class="newest">
-
-            <a href="product.html">
-                <div class="image-box"><img src='{% static "images/example 1.jpg" %}' alt="" style="height: 200px; width: 200px;">
-                </div>
-            </a>
-            <div class="image-box"></div>
-            <div class="image-box"></div>
-            <div class="image-box"></div>
-            <div class="image-box"></div>
-
+            {% for item in products %}
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="{{ item.picture.url }}" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">{{ item.name }}</h5>
+                                    <!-- Product price-->
+                                    In the {{ item.category.category_name }} category <br>
+                                    {{ item.price }} toman
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                            </div>
+                        </div>
+                    </div>
+            {% endfor %}
         </div>
 
         <!-- popular brands -->
@@ -86,9 +93,13 @@
 
 
     </div>
+    </div>
 
     {% include 'contactUs.html' %}
+
     </div>
+
+
     <script src='{% static "script/homePage.js" %}'></script>
 </body>
 

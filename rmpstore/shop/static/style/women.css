@@ -1,7 +1,19 @@
+/* delete browser defults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: brand_font;
     src: url(../font/Galindo/Galindo-Regular.ttf);
 }
+
+.women_page {
+    background-color: rgb(219, 165, 183);
+}
+
 
 /* brand*/
 
@@ -25,7 +37,7 @@
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menue {
+.menu {
     border-radius: 50px;
     background-color: #607c3b;
     padding: 10px 0;
@@ -64,7 +76,12 @@
 /* end menu style */
 
 
+
+
+
+
 /* categorys */
+/* radif 1 */
 
 .categorys {
 
@@ -72,12 +89,11 @@
     justify-content: center;
     align-items: center;
     gap: 80px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .category_box {
     margin-top: 100px;
-    border: 3px solid palevioletred;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -90,4 +106,18 @@
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 224px;
+    margin-top: 10px;
+
+}
+
+.category_title {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
