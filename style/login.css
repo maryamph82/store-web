@@ -39,28 +39,42 @@ body {
 
 /* start menu style */
 
+
 @font-face {
     font-family: menu;
     src: url(/font/Galindo/Galindo-Regular.ttf);
 }
 
-.menu {
-    background-color: #607c3b;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
+.searchBox {
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: .25s;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 200px;
+}
+
+.searchBox:focus {
+    box-shadow: 5px 8px 15px 5px rgb(20, 20, 20);
 }
 
 .menu-option {
+    height: 50px;
+    border-radius: 50px;
+    background-color: #7b915e;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .option {
-
     margin: 0 15px;
 }
 
@@ -72,11 +86,13 @@ body {
     transition: color 0.3s, background-color 0.3s;
     padding: 10px;
     border-radius: 5px;
+    align-items: center;
+    display: flex;
 }
 
 .option a:hover {
-    color: #333;
-    background-color: #f2f2f2;
+    color: #697260;
+    background-color: #cdecd2;
 }
 
 
