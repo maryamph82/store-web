@@ -10,6 +10,11 @@
     src: url(../font/Galindo/Galindo-Regular.ttf);
 }
 
+@font-face {
+    font-family: title;
+    src: url(/font/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf);
+}
+
 /* brand*/
 
 .brand__name {
@@ -86,74 +91,70 @@
 
 /* end menu style */
 
-/* why R.M.P srote? */
-.Question {
-    color: rgb(109, 10, 10);
+
+/* title */
+.title {
+    font-family: title;
+    font-size: 30px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 100px;
-    font-size: 40px;
-    font-family: brand_font;
+    height: 60px;
+    background-color: #cdecd2;
+    border-radius: 20px;
+    margin-top: 80px;
+
 }
 
-/* answers */
-
-
-.answer {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s, transform 1s;
-}
-
-.answer.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.answers {
+/* serach result boxs style :  */
+.results_boxs {
     display: flex;
-    gap: 300px;
-    margin-left: 100px;
-    margin-right: 50px;
-    margin-top: 100px;
+    gap: 170px;
+    margin-top: 50px;
+    margin-left: 75px;
+
+}
+
+/* box style */
+.box {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #f2f7ed;
+    border: 1px solid black;
 }
 
 
-
-.brand-icon {
-    justify-content: center;
-    align-items: center;
+/* product image style */
+.product_image img {
+    margin-left: 50px;
+    margin-top: 9px;
+    text-align: center;
+    height: 190px;
+    width: 200px;
     display: flex;
-}
-
-.discription {
-    font-family: brand_font;
-    font-size: 19px;
-    padding: 70px;
-    color: aliceblue;
-    flex-direction: column;
-    width: 800px;
-    min-height: 200px;
-    max-height: 300px;
     justify-content: center;
     align-items: center;
-    display: flex;
-    margin: 50px auto;
-    background-color: rgb(101, 184, 184);
-    border-radius: 18px;
+    border-radius: 10px;
 }
 
 
-.contact-icons {
+.product_name {
+    margin-top: 9px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    font-family: title;
+    font-size: 25px;
+    color: black;
 }
 
-.contact-icons a {
-    display: inline-block;
-    margin-left: 7px;
-    margin-right: 7px;
+.product_price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: title;
+    font-size: 22px;
+    color: rgb(212, 37, 37);
+  
+    
 }
