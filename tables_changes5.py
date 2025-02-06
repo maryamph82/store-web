@@ -212,18 +212,20 @@ category_instance10 = session.query(Categories).filter(Categories.category_id ==
 category_instance11 = session.query(Categories).filter(Categories.category_id == 341).one()
 
 
-product_1 = Products(name='handbag', color='brown', quantity=20, category=category_instance1, gender=GenderEnum.female, brand='Gucci', material='leather', date=date(2024, 7, 1), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کیف-برند-گوچی-2-min-1.jpg', 'rb').read(), price=150000)
-product_2 = Products(name='belt', color='black', quantity=50, category=category_instance2, gender=GenderEnum.male, brand='Levi\'s', material='leather', date=date(2024, 7, 2), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کمربند مشکی.jpg', 'rb').read(), price=30000)
-product_3 = Products(name='winter coat', color='white', quantity=15, category=category_instance3, gender=GenderEnum.male, brand='Zara', material='wool', date=date(2024, 7, 3), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کت زمستانی سفید.jpg', 'rb').read(), price=500000)
-product_4 = Products(name='hat', color='red', quantity=25, category=category_instance4, gender=GenderEnum.female, brand='Adidas', material='cotton', date=date(2024, 7, 4), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کلاه قرمز آدیداس.jpg', 'rb').read(), price=25000)
-product_5 = Products(name='hoodie', color='grey', quantity=30, category=category_instance5, gender=GenderEnum.male, brand='Nike', material='polyester', date=date(2024, 7, 5), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/هودی خاکستری نایک.jpg', 'rb').read(), price=120000)
-product_6 = Products(name='pants', color='blue', quantity=40, category=category_instance6, gender=GenderEnum.female, brand='H&M', material='jane', date=date(2024, 7, 6), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/شلوار آبی جین.jpg', 'rb').read(), price=80000)
-product_7 = Products(name='shawl', color='yellow', quantity=35, category=category_instance7, gender=GenderEnum.female, brand='Hermès', material='silk', date=date(2024, 7, 7), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/شال زرد هرمس.jpg', 'rb').read(), price=200000)
-product_8 = Products(name='shoes', color='white', quantity=45, category=category_instance8, gender=GenderEnum.male, brand='Reebok', material='leather', date=date(2024, 7, 8), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کفش سفید ریبوک.jpg', 'rb').read(), price=180000)
-product_9 = Products(name='skirt', color='pink', quantity=20, category=category_instance9, gender=GenderEnum.female, brand='Versace', material='wool', date=date(2024, 7, 9), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/دامن صورتی پشمی.jpg', 'rb').read(), price=250000)
-product_10 = Products(name='socks', color='white', quantity=100, category=category_instance10, gender=GenderEnum.female, brand='Nike', material='cotton', date=date(2024, 7, 15), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/جوراب سفید نایک.jpg', 'rb').read(), price=5000)
-product_11 = Products(name='T-shirt', color='red', quantity=60, category=category_instance11, gender=GenderEnum.male, brand='Adidas', material='cotton', date=date(2024, 7, 20), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/تیشرت آدیداس قرمز.jpg', 'rb').read(), price=40000)
+# product_1 = Products(name='handbag', color='brown', quantity=20, category=category_instance1, gender=GenderEnum.female, brand='Gucci', material='leather', date=date(2024, 7, 1), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کیف-برند-گوچی-2-min-1.jpg', 'rb').read(), price=150000)
+# product_2 = Products(name='belt', color='black', quantity=50, category=category_instance2, gender=GenderEnum.male, brand='Levi\'s', material='leather', date=date(2024, 7, 2), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کمربند مشکی.jpg', 'rb').read(), price=30000)
+# product_3 = Products(name='winter coat', color='white', quantity=15, category=category_instance3, gender=GenderEnum.male, brand='Zara', material='wool', date=date(2024, 7, 3), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کت زمستانی سفید.jpg', 'rb').read(), price=500000)
+# product_4 = Products(name='hat', color='red', quantity=25, category=category_instance4, gender=GenderEnum.female, brand='Adidas', material='cotton', date=date(2024, 7, 4), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کلاه قرمز آدیداس.jpg', 'rb').read(), price=25000)
+# product_5 = Products(name='hoodie', color='grey', quantity=30, category=category_instance5, gender=GenderEnum.male, brand='Nike', material='polyester', date=date(2024, 7, 5), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/هودی خاکستری نایک.jpg', 'rb').read(), price=120000)
+# product_6 = Products(name='pants', color='blue', quantity=40, category=category_instance6, gender=GenderEnum.female, brand='H&M', material='jane', date=date(2024, 7, 6), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/شلوار آبی جین.jpg', 'rb').read(), price=80000)
+# product_7 = Products(name='shawl', color='yellow', quantity=35, category=category_instance7, gender=GenderEnum.female, brand='Hermès', material='silk', date=date(2024, 7, 7), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/شال زرد هرمس.jpg', 'rb').read(), price=200000)
+# product_8 = Products(name='shoes', color='white', quantity=45, category=category_instance8, gender=GenderEnum.male, brand='Reebok', material='leather', date=date(2024, 7, 8), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/کفش سفید ریبوک.jpg', 'rb').read(), price=180000)
+# product_9 = Products(name='skirt', color='pink', quantity=20, category=category_instance9, gender=GenderEnum.female, brand='Versace', material='wool', date=date(2024, 7, 9), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/دامن صورتی پشمی.jpg', 'rb').read(), price=250000)
+# product_10 = Products(name='socks', color='white', quantity=100, category=category_instance10, gender=GenderEnum.female, brand='Nike', material='cotton', date=date(2024, 7, 15), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/جوراب سفید نایک.jpg', 'rb').read(), price=5000)
+# product_11 = Products(name='T-shirt', color='red', quantity=60, category=category_instance11, gender=GenderEnum.male, brand='Adidas', material='cotton', date=date(2024, 7, 20), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/تیشرت آدیداس قرمز.jpg', 'rb').read(), price=40000)
 
+product_12 = Products(name='ttt', color='red', quantity=60, category=category_instance11, gender=GenderEnum.child, brand='Adidas', material='cotton', date=date(2024, 7, 20), picture=open('C:/Users/maryam/Pictures/Camera Roll/عکس های سایت/تیشرت آدیداس قرمز.jpg', 'rb').read(), price=40000)
+session.add(product_12)
 # session.add_all([product_1, product_2, product_3, product_4, product_5, product_6, product_7, product_8, product_9, product_10, product_11])
 
 product_instance1 = session.query(Products).filter(Products.product_id == 17).one()
@@ -307,7 +309,7 @@ order_12 = Orders(product=product_instance23 ,user=user_instance6 ,order_date=da
 
 product_instance24 = session.query(Products).filter(Products.product_id == 23).one()
 skirt_1 = Skirts(product=product_instance24 ,size='Medium' , description='Safe pink Versace to the knee') 
-session.add(skirt_1)
+# session.add(skirt_1)
 
 session.commit()
 session.close()
