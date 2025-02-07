@@ -24,8 +24,6 @@ function buy() {
     },
     ]
 
-
-
     productsArray.push({ product })
     localStorage.setItem('products', (localStorage.getItem('products')) + JSON.stringify(productsArray));
 }

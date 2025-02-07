@@ -12,6 +12,7 @@
 
 body{
     background-color: #f3f3f3;
+    text-align: center;
 }
 
 
@@ -90,17 +91,19 @@ body{
 
 
 /* end menu style */
-.categorys {
 
+
+.categorys{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin-top: 0px;
+    gap: 100px;
+    margin-block: 100px;
+
 }
 
+
 .category_box {
-    margin-top: 100px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -129,8 +132,6 @@ body{
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
 
 /* start footer style */
 

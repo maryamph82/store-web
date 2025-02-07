@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -11,8 +12,9 @@
     src: url(../font/Galindo/Galindo-Regular.ttf);
 }
 
-body{
+body {
     background-color: #f3f3f3;
+    text-align: center;
 }
 
 /* brand*/
@@ -92,17 +94,18 @@ body{
 /* end menu style */
 
 
-.categorys {
 
+.categorys {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 80px;
-    margin-top: 0px;
+    gap: 100px;
+    margin-block: 100px;
+
 }
 
+
 .category_box {
-    margin-top: 100px;
     border-radius: 100%;
     height: 200px;
     width: 200px;
@@ -137,7 +140,7 @@ body{
 /* start footer style */
 
 .about {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     height: 400px;
     justify-content: space-evenly;
@@ -166,7 +169,7 @@ body{
     align-items: center;
 }
 
-.atten{
+.atten {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }

@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: title-font;
-    src: url(/font/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf);
+    src: url(../font/Space_Grotesk/static/SpaceGrotesk-Regular.ttf);
 }
 
 @font-face {
@@ -17,10 +17,10 @@
 }
 
 body {
-    background-color: rgb(214, 234, 226);
     display: flex;
     flex-direction: column;
 }
+
 
 /* start menu */
 
@@ -61,17 +61,46 @@ body {
 /* end menu */
 
 
-.form {
+
+.title{
+    font-size: 30px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    padding: 70px 100px;
-    margin: 100px auto;
-    border-radius: 100px;
+    background-color:blanchedalmond;
+    margin-bottom: 30px;
+    margin-top: 30px;
 
 }
-
+.cart {
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .cart-item img {
+    width: 160px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  .item-details {
+    margin-left: 10px;
+  }
+  .total {
+    text-align: right;
+    margin-top: 10px;
+  }
+  .checkout-button {
+    width: 100%;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+  }
 

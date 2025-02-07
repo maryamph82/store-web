@@ -16,7 +16,42 @@
         <li class="option"><a href="confirmation.html">Customer order confirmation</a></li>
     </ul>
 
+    <div class="form">
+        <div class="step1">
+            <p>choose product type</p>
+            <select name="choose product" id="product_choose">
+                <option value="Shoes">Shoes</option>
+                <option value="hat">hat</option>
+                <option value="coat">coat</option>
+        </div>
+        </select>
+        <div class="step2">
+            <p>enter product id</p>
+            <input type="number" name="product id " >
+        </div>
+        <div class="step3">
+            <p>Which part of the product specification do you want to change?</p>
+            <div id="commonFields">
+                <select name="part of the product" id="">
+                    <option value="name">name</option>
+                    <option value="color">color</option>
+                    <option value="quantity">quantity</option>
+                    <option value="description">description</option>
+                    <option value="brand">brand</option>
+                    <option value="size">size</option>
+                    <option value="picture">picture</option>
+                    <option value="quantity">quantity</option>
+                    <option value="price">price</option>
+                </select>
+            </div>
+        </div>
 
+
+
+    </div>
+
+
+    <script src="/script/editProduct.js"></script>
 </body>
 
 </html>

@@ -107,14 +107,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.women .body_product {
-    background-color: #cfe6d8;
+.box .body_product {
+    background-color: #cae9d6;
 
 }
 
 .image-box {
-
-
     align-items: center;
 
 }
@@ -139,9 +137,9 @@
     margin-top: 30px;
     color: aliceblue;
     text-align: center;
-    background: #681920;
+    background: #2d591e;
     height: 50px;
-    width: 70px;
+    width: 170px;
     border-radius: 18px;
     transition: 0.3s;
 
@@ -149,7 +147,6 @@
 
 .buy:hover {
     background-color: #94af98;
-
 }
 
 .about_product {
@@ -189,13 +186,13 @@
 
 
 
-.women {
+.box {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-body.loaded .women {
+body.loaded .box {
     opacity: 1;
     transform: translateY(0);
 }

@@ -5,18 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shoppingCart</title>
-    <link rel="stylesheet" href="shoppingCart.css">
+    <link rel="stylesheet" href="/style/shoppingCart.css">
 </head>
 
 <body>
 
-    <div class="cart">
-        <div class = "title">cart List</div>
-             <ul id="cartList">
+    <!-- menu -->
+
+    <ul class="menu-option">
+        <input class="searchBox" type="search" placeholder="Search...">
+        <li class="option"><a href="UserPage.html">home</a></li>
+        <li class="option"><a href="women page.html">women</a></li>
+        <li class="option"><a href="men page.html">men</a></li>
+        <li class="option"><a href="kids.html">kids</a></li>
+        <li class="option"><a href="contact.html"> contact to us</a></li>
+        <li class="option"><a href="home page.html">exit</a></li>
+        <li class="option"><a href="shoppingCart.html"><img src="/images/shopping-cart-icon-md.png" alt="shopping cart"
+                    style="width: 30px; height: 30px;"></a></li>
+        <li class="option"><a href="userProf.html"><img src="/images/User account icon.png" alt="account"
+                    style="width: 30px; height: 30px;"></a></li>
+                    
+    </ul>
+    <!-- end menu -->
 
 
-        </ul>
+
+    <div class="title">cart List</div>
+    <div class="cart" id="cart">
+        <div class="cart-item">
+            <div class="item-img"><img src="/images/example 1.jpg" alt=""></div>
+            <div class="item-details">
+                <h4>product name</h4>
+                <p>price</p>
+                <p>quantity</p>
+            </div>
+        </div>
+        <div class="total">
+            <h3>total price</h3>
+        </div>
+        <button class="checkout-button" onclick="final_buy()">Final purchase confirmation</button>
     </div>
+
 
     <script src="/script/shoppingCart.js"></script>
 </body>
