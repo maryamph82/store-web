@@ -177,11 +177,7 @@ input {
     gap: 20px;
 }
 
-<<<<<<< HEAD
-.image-box :hover {
-=======
 .image-box :hover{
->>>>>>> 37cfd20c77350dffb3cc801eb701272c26ceeb59
     box-shadow: 7px 4px 8px black;
     transform: translateY(-2px);
 }
