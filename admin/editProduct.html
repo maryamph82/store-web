@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/web icon3.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>edit product</title>
     <link rel="stylesheet" href="/style/editProduct.css">
 </head>
 
@@ -17,37 +18,69 @@
     </ul>
 
     <div class="form">
+        <div class="title">edit products</div>
         <div class="step1">
             <p>choose product type</p>
-            <select name="choose product" id="product_choose">
-                <option value="Shoes">Shoes</option>
+            <select name="choose product" id="product_choose" required>
+                <option value="shoes">shoes</option>
                 <option value="hat">hat</option>
                 <option value="coat">coat</option>
+                <option value="scarf">scarf</option>
+                <option value="pants">pants</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="skrit">skrit</option>
+                <option value="hoodie">hoodie</option>
+                <option value="belt">belt</option>
+                <option value="sock">sock</option>
+                <option value="bag">bag</option>
+
         </div>
         </select>
         <div class="step2">
             <p>enter product id</p>
-            <input type="number" name="product id " >
+            <input type="number" name="product id " id="productID" required>
         </div>
-        <div class="step3">
+        <div class="step2">
             <p>Which part of the product specification do you want to change?</p>
-            <div id="commonFields">
-                <select name="part of the product" id="">
+            <div class="step3">
+                <select name="part of the product" id="changePart" required>
+                    <option value=" ">part of the product</option>
                     <option value="name">name</option>
                     <option value="color">color</option>
                     <option value="quantity">quantity</option>
                     <option value="description">description</option>
                     <option value="brand">brand</option>
-                    <option value="size">size</option>
+                    <option value="size" id="size">size</option>
                     <option value="picture">picture</option>
                     <option value="quantity">quantity</option>
                     <option value="price">price</option>
+                    <option value="gender">gender</option>
+                    <option value="material">material</option>
+                    <option value="picture">picture</option>
                 </select>
             </div>
         </div>
-
-
-
+        <div class="step4">
+            <div class="text-input" id="text-input" style="display: none;"><input type="text" required></div>
+            <div class="number-input" id="number-input" style="display: none;"><input type="number" required></div>
+            <div class="image-input" id="image-input" style="display: none;"> <input type="file" name="image"
+                    accept="image/*" required></div>
+            <div class="size-input">
+                <select name="size" id="size-input" style="display: none;">
+                    <option value="Larg">Larg</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Small">Small</option>
+                </select>
+            </div>
+            <div class="gender-input" style="display: none;">
+                <select name="gendert" id="gender-input" required>
+                    <option value="Larg">men</option>
+                    <option value="Medium">women</option>
+                    <option value="Small">kids</option>
+                </select>
+            </div>
+        </div>
+        <button>submit</button>
     </div>
 
 

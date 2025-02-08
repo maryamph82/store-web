@@ -114,6 +114,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: .25s;
+}
+
+.gender_choos :hover {
+    border-radius: 50px;
+    box-shadow: 7px 4px 1px rgb(83, 79, 79);
+    transform: translateY(-2px);
 }
 
 input {
@@ -170,23 +177,32 @@ input {
     gap: 20px;
 }
 
+.image-box :hover {
+    box-shadow: 7px 4px 8px black;
+    transform: translateY(-2px);
+}
+
 .image-box {
     width: 200px;
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 20px;
+    margin-bottom: 60px;
+
 }
 
 .image-box img {
     border-radius: 20px;
     height: 200px;
     width: 200px;
+    transition: .25s;
+    
 }
 
 /* ABOUT FOOTER */
 
 .about {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     height: 400px;
     justify-content: space-evenly;
@@ -215,8 +231,7 @@ input {
     align-items: center;
 }
 
-.atten{
+.atten {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
-

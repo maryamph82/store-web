@@ -10,7 +10,7 @@
 
 
 body {
-    background-color: #b1eed7;
+    background: linear-gradient(to right, #66867d, #69c5c9);
 }
 
 /* brand*/
@@ -121,28 +121,35 @@ input {
 }
 
 button {
-    color: white;
-    padding: 15px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
     max-width: 500px;
     min-width: 278px;
-    background-color: rgb(132, 137, 132);
-    margin-top: 40px;
-    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(130, 192, 130);
+    margin-top: 30px;
 }
+
+button:hover {
+    transition: .25s;
+    color: #edeeeb;
+    background-color:rgb(94, 129, 101) ;;
+}
+
 
 
 .title {
     font-family: title-font;
     font-size: 35px;
-    margin-bottom: 10px;
-
+    margin-bottom: 25px;
 }
+
 
 
 /* start footer style */
 
 .about {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     height: 400px;
     justify-content: space-evenly;
@@ -171,7 +178,7 @@ button {
     align-items: center;
 }
 
-.atten{
+.atten {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }

@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #f3f3f3;
+    background: linear-gradient(to right, #1b197a, #9697dd);
     text-align: center;
 }
 
@@ -118,6 +118,12 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: .25s ;
+}
+
+.category_box :hover{
+    box-shadow: 7px 4px 8px black;
+    transform: translateY(-2px);
 }
 
 .title {
@@ -131,8 +137,8 @@ body {
 }
 
 .category_title {
+    font-family:monospace;
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

@@ -8,7 +8,7 @@
 
 
 body {
-    background-color: #b1eed7;
+    background: linear-gradient(to right, #9379da, #6d4266);
 }
 
 @font-face {
@@ -133,8 +133,15 @@ button {
     max-width: 500px;
     min-width: 278px;
     border: none;
-    background-color: rgb(106, 158, 106);
+    background-color: rgb(131, 177, 131);
     margin-top: 30px;
+}
+
+button:hover {
+    transition: .25s;
+    color: #edeeeb;
+    background-color: rgb(94, 129, 101);
+
 }
 
 .title {
