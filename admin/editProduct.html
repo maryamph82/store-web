@@ -19,34 +19,46 @@
     <div class="form">
         <div class="step1">
             <p>choose product type</p>
-            <select name="choose product" id="product_choose">
-                <option value="Shoes">Shoes</option>
+            <select name="choose product" id="product_choose" required>
+                <option value="shoes">shoes</option>
                 <option value="hat">hat</option>
                 <option value="coat">coat</option>
+                <option value="scarf">scarf</option>
+                <option value="pants">pants</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="skrit">skrit</option>
+                <option value="hoodie">hoodie</option>
+                <option value="belt">belt</option>
+                <option value="sock">sock</option>
+                <option value="bag">bag</option>
+                
         </div>
         </select>
         <div class="step2">
             <p>enter product id</p>
-            <input type="number" name="product id " >
+            <input type="number" name="product id " id="productID" required>
         </div>
         <div class="step3">
             <p>Which part of the product specification do you want to change?</p>
-            <div id="commonFields">
-                <select name="part of the product" id="">
+            <div class="step2">
+                <select name="part of the product" id="changePart" required>
                     <option value="name">name</option>
                     <option value="color">color</option>
                     <option value="quantity">quantity</option>
                     <option value="description">description</option>
                     <option value="brand">brand</option>
-                    <option value="size">size</option>
+                    <option value="size" id="size">size</option>
                     <option value="picture">picture</option>
                     <option value="quantity">quantity</option>
                     <option value="price">price</option>
+                    <option value="gender">gender</option>
+                    <option value="material">material</option>
+                    <option value="picture">picture</option>
                 </select>
             </div>
         </div>
 
-
+        <input type="text" id="text-input" required>
 
     </div>
 

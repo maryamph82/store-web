@@ -109,6 +109,11 @@ body{
     width: 200px;
 }
 
+.category_box :hover{
+    box-shadow: 7px 4px 8px black;
+    transform: translateY(-2px);
+}
+
 .category_box img {
     height: 190px;
     width: 190px;

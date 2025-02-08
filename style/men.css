@@ -120,6 +120,11 @@ body {
     display: flex;
 }
 
+.category_box :hover{
+    box-shadow: 7px 4px 8px black;
+    transform: translateY(-2px);
+}
+
 .title {
     display: flex;
     justify-content: center;
